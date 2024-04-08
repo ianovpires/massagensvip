@@ -366,6 +366,42 @@ main {
   padding: 4rem 1rem;
   gap: 2rem;
 }
+footer {
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto no footer */
+  padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.footer-inner-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Largura máxima do conteúdo interno */
+  margin: 0 auto; /* Centralizar o conteúdo */
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  flex-basis: calc(33.33% - 10px); /* Divide o espaço em 3 colunas */
+}
+
+.footer-about,
+.footer-contact {
+  margin-right: 20px; /* Espaçamento entre as colunas */
+}
+
+.footer-about h4,
+.footer-contact h4,
+.footer-social h4 {
+  margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+.footer-social a {
+  color: #fff; /* Cor dos ícones das redes sociais */
+  font-size: 20px; /* Tamanho dos ícones */
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
 
 .download-options > p:first-child {
   font-weight: bold;
@@ -423,5 +459,73 @@ main {
   }
   .copyright {
     font-size: 0.8rem;
+  }
+}
+
+/* Estilos do modal */
+#myModal {
+  display: none; /* Ocultar o modal por padrão */
+  position: fixed; /* Posição fixa */
+  z-index: 9999; /* Z-index alto para garantir que o modal apareça na frente de outros elementos */
+  left: 50%; /* Coloca o modal na metade da largura da tela */
+  top: 50%; /* Coloca o modal na metade da altura da tela */
+  transform: translate(-50%, -50%); /* Centraliza o modal vertical e horizontalmente */
+  width: 90%; /* Largura do modal */
+  max-width: 1000px; /* Define uma largura máxima para o modal */
+  max-height: 100%; /* Limitar a altura do modal */
+  overflow: auto; /* Adicionar rolagem se o conteúdo for maior que a janela */
+  background-color: #fefefe; /* Fundo do modal */
+  border: 1px solid #888; /* Adiciona uma borda ao modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao modal */
+}
+
+.modal-content {
+  padding: 40px; /* Espaçamento interno do conteúdo do modal */
+}
+
+.close {
+  color: #aaa; /* Cor do botão de fechar */
+  position: absolute; /* Posição absoluta para o botão */
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  font-size: 28px; /* Tamanho da fonte do botão */
+  font-weight: bold; /* Negrito para o botão */
+  cursor: pointer; /* Altera o cursor para o botão */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Cor do botão de fechar ao passar o mouse */
+  text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
+}
+
+/* Estilo para as imagens dentro do modal */
+.modal-content img {
+  max-width: 100%; /* Garantir que a imagem não exceda a largura do modal */
+  height: auto; /* Manter a proporção da imagem */
+}
+
+/* Estilos para o elemento de sobreposição */
+#overlay {
+  display: none; /* Oculta o elemento de sobreposição por padrão */
+  position: fixed; /* Posição fixa */
+  top: 0; /* Alinha o elemento de sobreposição ao topo da janela */
+  left: 0; /* Alinha o elemento de sobreposição à esquerda da janela */
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+  z-index: 9998; /* Z-index menor que o modal para que fique por trás dele */
+}
+
+/* Media queries para tornar o modal responsivo */
+@media only screen and (max-width: 600px) {
+  #myModal {
+    width: 95%; /* Reduz a largura do modal para telas menores */
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  #myModal {
+    max-height: 80%; /* Reduz a altura máxima do modal para telas com altura menor */
   }
 }
