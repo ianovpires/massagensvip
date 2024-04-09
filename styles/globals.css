@@ -114,7 +114,7 @@ header {
 }
 
 .btnVermais {
-  background-color: background-color: rgb(4, 88, 32);
+  background-color: rgb(4, 88, 32);
   border: none;
   cursor: pointer;
   padding: 0.8rem 3.8rem;
@@ -133,9 +133,6 @@ header {
 
 .header-bottom-side-right img {
   width: 90%;
-}
-
-.buttonT {
 }
 
 /* Media Queries */
