@@ -45,7 +45,7 @@
             <li>Home</li>
             <li>Terapeutas</li>
             <li>Clínicas</li>
-            <li>Contato</li>
+            <li>Massagens</li>
             <li>Massagem Misteriosa</li>
             <li>
               <span>
@@ -87,16 +87,30 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-      <div class="gray-background">
-        <div class="page-inner-content">
-          <div class="cols cols-3">
-            <img src="./images/products/product-1.png" alt="" />
-            <img src="./images/products/product-2.png" alt="" />
-            <img src="./images/products/product-3.png" alt="" />
+    <div class="gray-background">
+      <div class="page-inner-content">
+        <div class="cols cols-3">
+          <div class="product-item">
+            <a href="#massagens">
+              <img src="./images/products/product-1.png" alt="Massagem relaxante">
+              <p>Massagem Relaxante</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#massagens">
+              <img src="./images/products/product-2.png" alt="Massagem terapêutica">
+              <p>Massagem Quatro Mãos</p>
+            </a>
+          </div>
+          <div class="product-item">
+            <a href="#massagens">
+              <img src="./images/products/product-3.png" alt="Massagem aromaterapia">
+              <p>Massagem Nuru</p>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
       <div>
         <div class="page-inner-content">
@@ -114,35 +128,101 @@
                 style="background-color: rgb(33, 168, 44)"
                 ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
               </a>
-
+              <div id="overlay"></div>
               <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div
+                    id="carouselExampleInterval"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="./images/products/product4-1.jpg" class="d-block w-100" alt="...">
+                        <img
+                          src="./images/products/product4-1.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/products/product4-2.jpg" class="d-block w-100" alt="...">
+                        <img
+                          src="./images/products/product4-2.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div class="carousel-item">
-                        <img src="./images/products/product4-3.jpg" class="d-block w-100" alt="...">
+                        <img
+                          src="./images/products/product4-3.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div class="carousel-item">
-                        <img src="./images/products/product4-4.jpg" class="d-block w-100" alt="...">
+                        <img
+                          src="./images/products/product4-4.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
                       <span class="visually-hidden">Voltar</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
                       <span class="visually-hidden">Avançar</span>
                     </button>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div id="myModalProduct5" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="carouselProduct5" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                      <img src="./images/products/product5-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="./images/products/product5-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/products/product5-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/products/product5-4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Voltar</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Avançar</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -157,6 +237,7 @@
                 style="background-color: rgb(33, 168, 44)"
                 ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
               </a>
+              
             </div>
             <div class="product">
               <img src="./images/products/product-6.jpg" alt="" />
@@ -465,7 +546,7 @@
         navbar.classList.toggle("show-menu");
       });
     </script>
-    
+
     <script>
       // Obtém a referência para o modal principal
       var modal = document.getElementById("myModal");
@@ -514,8 +595,53 @@
           overlay.style.display = "none";
         }
       };
+    </script>
+    <script>
+      // Obtém a referência para o modal principal do product-5
+      var modalProduct5 = document.getElementById("myModalProduct5");
+    
+      // Obtém a referência para a imagem do product-5
+      var imgProduct5 = document.querySelector(".product img[src='./images/products/product-5.jpg']");
+    
+      // Obtém a referência para o botão de fechar (x) do modal principal do product-5
+      var spanProduct5 = document.querySelector("#myModalProduct5 .close");
+    
+      // Obtém a referência para o elemento de sobreposição do product-5
+      var overlayProduct5 = document.getElementById("overlayProduct5");
+    
+      // Quando o usuário clicar na imagem do product-5, abre o modal principal e exibe o overlay
+      imgProduct5.onclick = function () {
+        modalProduct5.style.display = "block";
+        overlayProduct5.style.display = "block";
+      };
+    
+      // Quando o usuário clicar no botão de fechar (x) do modal principal do product-5, fecha o modal principal e esconde o overlay
+      spanProduct5.onclick = function () {
+        modalProduct5.style.display = "none";
+        overlayProduct5.style.display = "none";
+      };
+    
+      // Fecha o modal principal do product-5 e esconde o overlay quando o usuário clica fora dele
+      window.onclick = function (event) {
+        if (event.target == overlayProduct5) {
+          modalProduct5.style.display = "none";
+          overlayProduct5.style.display = "none";
+        }
+      };
+    </script>
+    
+    
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block"; // Exibe o modal
+        document.getElementById("overlay").style.display = "block"; // Exibe o overlay
+      }
 
-   
+      // Função para fechar o modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none"; // Oculta o modal
+        document.getElementById("overlay").style.display = "none"; // Oculta o overlay
+      }
     </script>
   </body>
 </html>
