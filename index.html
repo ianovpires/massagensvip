@@ -627,9 +627,14 @@
           modalProduct5.style.display = "none";
           overlayProduct5.style.display = "none";
         }
+        };
+        // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
+      modalProduct5.onmouseleave = function () {
+        modalProduct5.style.display = "none";
+        overlayProduct5.style.display = "none";
       };
+
     </script>
-    
     
     <script>
       function openModal() {
