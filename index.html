@@ -546,6 +546,36 @@
         navbar.classList.toggle("show-menu");
       });
     </script>
+    <script>
+      // Obtém a referência para todos os elementos com a classe 'close'
+      var closeButtons = document.querySelectorAll(".close");
+      // Obtém uma referência para o overlay
+      var overlay = document.getElementById("overlay");
+    
+      // Itera sobre cada botão de fechar encontrado
+      closeButtons.forEach(function(button) {
+        // Adiciona um ouvinte de evento de clique para cada botão de fechar
+        button.addEventListener("click", function() {
+          // Obtém uma referência para o modal atual
+          var modal = this.closest(".modal");
+          // Esconde o modal atual
+          modal.style.display = "none";
+          // Esconde o overlay
+          overlay.style.display = "none";
+        });
+      });
+    
+      // Adiciona um ouvinte de evento de clique para o overlay
+      overlay.addEventListener("click", function() {
+        // Oculta todos os modais
+        var modals = document.querySelectorAll(".modal");
+        modals.forEach(function(modal) {
+          modal.style.display = "none";
+        });
+        // Oculta o overlay
+        overlay.style.display = "none";
+      });
+    </script>
 
     <script>
       // Obtém a referência para o modal principal
@@ -635,6 +665,7 @@
       };
 
     </script>
+    
     
     <script>
       function openModal() {
