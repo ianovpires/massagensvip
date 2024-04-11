@@ -601,6 +601,13 @@ footer {
   height: auto; /* Mantém a proporção da imagem */
 }
 
+#myModalProduct5 .modal-content img {
+  width: 100%; /* Garantir que a imagem ocupe toda a largura do modal */
+  height: auto; /* Manter a proporção da imagem */
+  display: block; /* Garantir que a imagem seja exibida como um bloco */
+  margin: 0 auto; /* Alinhar a imagem ao centro horizontalmente */
+}
+
 #myModalProduct5 .close {
   color: #aaa; /* Cor do botão de fechar */
   position: absolute; /* Posição absoluta para o botão */

@@ -23,8 +23,8 @@
         color: #fff; /* Cor do texto do botão */
         border: none;
         border-radius: 5px; /* Borda arredondada */
-        padding: 10px 20px; /* Espaçamento interno */
-        font-size: 16px;
+        padding: 5px 10px; /* Espaçamento interno */
+        font-size: 10px;
         cursor: pointer;
         text-decoration: none; /* Remover sublinhado do texto */
         display: inline-block; /* Exibir como elemento de bloco */
@@ -295,7 +295,7 @@
                   alt=""
                 />
                 <p class="product-name">Massagista</p>
-                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
                 <p class="product-price">Massagens <span>Terapêuticas</span></p>
                 <a
                   href="https://api.whatsapp.com/send?phone=+5521965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
@@ -576,7 +576,7 @@
                 vezes sem dúvidas
               </p>
               <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              <p>Juliana Ianove.</p>
+              <p>Juliano Ianov.</p>
             </div>
 
             <div class="testimonial">
@@ -609,7 +609,7 @@
         target="_blank"
         href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
       >
-        <div class="rwb-tooltip">Reservar agora</div>
+        <div class="rwb-tooltip">Anuncie Aqui</div>
         <img
           src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
         />
@@ -679,36 +679,8 @@
         navbar.classList.toggle("show-menu");
       });
     </script>
-    <script>
-      // Obtém a referência para todos os elementos com a classe 'close'
-      var closeButtons = document.querySelectorAll(".close");
-      // Obtém uma referência para o overlay
-      var overlay = document.getElementById("overlay");
     
-      // Itera sobre cada botão de fechar encontrado
-      closeButtons.forEach(function(button) {
-        // Adiciona um ouvinte de evento de clique para cada botão de fechar
-        button.addEventListener("click", function() {
-          // Obtém uma referência para o modal atual
-          var modal = this.closest(".modal");
-          // Esconde o modal atual
-          modal.style.display = "none";
-          // Esconde o overlay
-          overlay.style.display = "none";
-        });
-      });
-    
-      // Adiciona um ouvinte de evento de clique para o overlay
-      overlay.addEventListener("click", function() {
-        // Oculta todos os modais
-        var modals = document.querySelectorAll(".modal");
-        modals.forEach(function(modal) {
-          modal.style.display = "none";
-        });
-        // Oculta o overlay
-        overlay.style.display = "none";
-      });
-    </script>
+ 
 
     <script>
       // Obtém a referência para o modal principal
@@ -812,5 +784,6 @@
         document.getElementById("overlay").style.display = "none"; // Oculta o overlay
       }
     </script>
+    
   </body>
 </html>
