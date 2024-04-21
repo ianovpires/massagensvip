@@ -1,771 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Massagem Vips</title>
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Adicione um link para os estilos do ícone do WhatsApp (substitua pelo seu próprio link de ícone) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <style>
-      .banner{
-        height: 100%;
-        width: 100%;
-       
-      }
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="header-inner-content">
-        <h1 class="logo">MASSAGEM<span>VIPS</span></h1>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Terapeutas</li>
-            <li>Clínicas</li>
-            <li>Massagens</li>
-            <li>Massagem Misteriosa</li>
-            <li>
-              <span>
-                <imagem> </imagem>
-              </span>
-            </li>
-          </ul>
-        </nav>
-        <div class="nav-icon-container">
-          <img src="https://massagemvips.vercel.app/images/cart.png" />
-          <img src="https://massagemvips.vercel.app/images/menu.png" class="menu-button" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massagem Vips</title>
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Adicione um link para os estilos do ícone do WhatsApp (substitua pelo seu próprio link de ícone) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    .banner {
+      height: 100%;
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="header-inner-content">
+      <h1 class="logo">MASSAGEM<span>VIPS</span></h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Terapeutas</li>
+          <li>Clínicas</li>
+          <li>Massagens</li>
+          <li>Massagem Misteriosa</li>
+          <li>
+            <span>
+              <imagem> </imagem>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-icon-container">
+        <img src="https://massagemvips.vercel.app/images/cart.png" />
+        <img src="https://massagemvips.vercel.app/images/menu.png" class="menu-button" />
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-inner-content">
+      <div class="header-bottom-side">
+        <div class="header-bottom-side-left">
+          <h2>Massagistas & Massoterapêutas</h2>
+          <p>
+            Bem-vindo ao MassagemVips, o seu portal exclusivo para conectar-se
+            com as melhores casas de massagem e profissionais excepcionais no
+            Rio de Janeiro. Somos a ponte que une o luxo das experiências de
+            massagem às talentosas terapeutas, oferecendo a você a liberdade
+            de escolher a combinação perfeita para seu relaxamento e
+            bem-estar. Explore a excelência em serviços, descubra ambientes
+            acolhedores e entregue-se a momentos únicos de cuidado pessoal. No
+            MassagemVips, a sua jornada para o equilíbrio e prazer começa com
+            a escolha certa.
+          </p>
+          <button>Ver Agora &#8594;</button>
+        </div>
+        <div class="header-bottom-side-right">
+          <img src="https://massagemvips.vercel.app/images/products/banner-5.jpg" alt="" />
         </div>
       </div>
     </div>
+  </header>
 
-    <header>
-      <div class="header-inner-content">
-        <div class="header-bottom-side">
-          <div class="header-bottom-side-left">
-            <h2>Massagistas & Massoterapêutas</h2>
-            <p>
-              Bem-vindo ao MassagemVips, o seu portal exclusivo para conectar-se
-              com as melhores casas de massagem e profissionais excepcionais no
-              Rio de Janeiro. Somos a ponte que une o luxo das experiências de
-              massagem às talentosas terapeutas, oferecendo a você a liberdade
-              de escolher a combinação perfeita para seu relaxamento e
-              bem-estar. Explore a excelência em serviços, descubra ambientes
-              acolhedores e entregue-se a momentos únicos de cuidado pessoal. No
-              MassagemVips, a sua jornada para o equilíbrio e prazer começa com
-              a escolha certa.
-            </p>
-            <button>Ver Agora &#8594;</button>
+  <!-- Main Content -->
+  <div class="gray-background ">
+    <div class="page-inner-content">
+      <div class="cols ">
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
-          <div class="header-bottom-side-right">
-            <img src="https://massagemvips.vercel.app/images/products/banner-5.jpg" alt="" />
+          <div class="carousel-inner banner ">
+            <div class="carousel-item active">
+              <img src="https://massagemvips.vercel.app/images/products/product-1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Massagem Relaxante</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://massagemvips.vercel.app/images/products/product-2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Massagem Quatro Mãos</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://massagemvips.vercel.app/images/products/product-3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Massagem Nuru</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="gray-background">
+        <div class="page-inner-content">
+          <h3 class="section-title">Últimas Inclusões Teste</h3>
+         
+          <div class="container">
+            <div>
+              <div class="content">
+                <h2>Anna</h2>
+                <span>Massagista</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Alex Smith</h2>
+                <span>CEO Expert</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Emily New</h2>
+                <span>Massagista</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Lisa Boley</h2>
+                <span>Massagista</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+      <!---->
 
-    <!-- Main Content -->
-    <div class="gray-background ">
-      <div class="page-inner-content">
-        <div class="cols " >
-          <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner banner ">
-              <div class="carousel-item active">
-                <img src="https://massagemvips.vercel.app/images/products/product-1.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Massagem Relaxante</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://massagemvips.vercel.app/images/products/product-2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Massagem Quatro Mãos</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://massagemvips.vercel.app/images/products/product-3.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Massagem Nuru</h5>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="gray-background">
-          <div class="page-inner-content">
-            <h3 class="section-title">Últimas Inclusões</h3>
-            <div class="subtitle-underline"></div>
-            <div class="cols cols-4">
-              <div class="product">
-                <img
-                  src="https://massagemvips.vercel.app/images/products/product-4.jpg"
-                  alt=""
-                />
-                <p class="product-name">Massagista</p>
-                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                <p class="product-price">Massagens <span>Terapêuticas</span></p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=+5521966377524&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                  class="btnVermais"
-                  style="background-color: rgb(57, 224, 71)"
-                  ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                </a>
-                <div id="overlay"></div>
-                <div id="myModal" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div
-                      id="carouselExampleInterval"
-                      class="carousel slide"
-                      data-bs-ride="carousel"
-                    >
-                      <div class="carousel-inner">
-                        <div
-                          class="carousel-item active"
-                          data-bs-interval="1000"
-                        >
-                          <img
-                            src="https://massagemvips.vercel.app/images/products/product4-1.JPG"
-                            class="d-block w-100"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                          <img
-                            src="https://massagemvips.vercel.app/images/products/product4-2.JPG"
-                            class="d-block w-100"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="carousel-item">
-                          <img
-                            src="https://massagemvips.vercel.app/images/products/product4-3.JPG"
-                            class="d-block w-100"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="carousel-item">
-                          <img
-                            src="https://massagemvips.vercel.app/images/products/product4-4.JPG"
-                            class="d-block w-100"
-                            alt="..."
-                          />
-                        </div>
-                      </div>
-                      <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev"
-                      >
-                        <span
-                          class="carousel-control-prev-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span class="visually-hidden">Voltar</span>
-                      </button>
-                      <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next"
-                      >
-                        <span
-                          class="carousel-control-next-icon"
-                          aria-hidden="true"
-                        ></span>
-                        <span class="visually-hidden">Avançar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="myModalProduct5" class="modal">
+      <div class="gray-background">
+        <div class="page-inner-content">
+          <h3 class="section-title">Últimas Inclusões</h3>
+          <div class="subtitle-underline"></div>
+          <div class="cols cols-4">
+            <div class="product">
+              <img src="https://massagemvips.vercel.app/images/products/product-4.jpg" alt="" />
+              <p class="product-name">Massagista</p>
+              <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="product-price">Massagens <span>Terapêuticas</span></p>
+              <a href="https://api.whatsapp.com/send?phone=+5521966377524&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver mais
+                pelo WhatsApp
+              </a>
+              <div id="overlay"></div>
+              <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <div
-                    id="carouselProduct5"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-                  >
+                  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="1000">
-                        <img
-                          src="https://massagemvips.vercel.app/images/products/product5-1.JPG"
-                          class="d-block w-100"
-                          alt="..."
-                        />
+                        <img src="https://massagemvips.vercel.app/images/products/product4-1.JPG" class="d-block w-100"
+                          alt="..." />
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
-                        <img
-                          src="https://massagemvips.vercel.app/images/products/product5-2.JPG"
-                          class="d-block w-100"
-                          alt="..."
-                        />
+                        <img src="https://massagemvips.vercel.app/images/products/product4-2.JPG" class="d-block w-100"
+                          alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="https://massagemvips.vercel.app/images/products/product5-3.JPG"
-                          class="d-block w-100"
-                          alt="..."
-                        />
+                        <img src="https://massagemvips.vercel.app/images/products/product4-3.JPG" class="d-block w-100"
+                          alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="https://massagemvips.vercel.app/images/products/product5-4.JPG"
-                          class="d-block w-100"
-                          alt="..."
-                        />
+                        <img src="https://massagemvips.vercel.app/images/products/product4-4.JPG" class="d-block w-100"
+                          alt="..." />
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselProduct5"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Voltar</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselProduct5"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Avançar</span>
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="product">
-                <img
-                  src="https://massagemvips.vercel.app/images/products/product-5.jpg"
-                  alt=""
-                />
-                <p class="product-name">Massagista</p>
-                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                <p class="product-price">Massagens <span>Terapêuticas</span></p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=+5521965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                  class="btnVermais"
-                  style="background-color: rgb(57, 224, 71)"
-                  ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                </a>
-              </div>
-              <div class="product">
-                <img
-                  src="https://massagemvips.vercel.app/images/products/product-6.jpg"
-                  alt=""
-                />
-                <p class="product-name">Massagista</p>
-                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                <p class="product-price">Massagens <span>Terapêuticas</span></p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                  class="btnVermais"
-                  style="background-color: rgb(57, 224, 71)"
-                  ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                </a>
-              </div>
-              <div class="product">
-                <img
-                  src="https://massagemvips.vercel.app/images/products/product-7.jpg"
-                  alt=""
-                />
-                <p class="product-name">Massagista</p>
-                <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                <p class="product-price">Massagens <span>Terapêuticas</span></p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                  class="btnVermais"
-                  style="background-color: rgb(57, 224, 71)"
-                  ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                </a>
-              </div>
             </div>
-            <div>
-              <div class="page-inner-content">
-                <h3 class="section-title">Massagistas & Massoterapêutas</h3>
-                <div class="subtitle-underline"></div>
-                <div class="cols cols-4">
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-4.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+5521966377524&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
+            <div id="myModalProduct5" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="carouselProduct5" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                      <img src="https://massagemvips.vercel.app/images/products/product5-1.JPG" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="https://massagemvips.vercel.app/images/products/product5-2.JPG" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://massagemvips.vercel.app/images/products/product5-3.JPG" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://massagemvips.vercel.app/images/products/product5-4.JPG" class="d-block w-100"
+                        alt="..." />
+                    </div>
                   </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-5.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-6.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-8.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-9.jpg"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens<span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens <span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  <div class="product">
-                    <img
-                      src="https://massagemvips.vercel.app/images/products/product-7.png"
-                      alt=""
-                    />
-                    <p class="product-name">Massagista</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                    <p class="product-price">
-                      Massagens<span>Terapêuticas</span>
-                    </p>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-                      class="btnVermais"
-                      style="background-color: rgb(57, 224, 71)"
-                      ><i class="fab fa-whatsapp"></i>Ver mais pelo WhatsApp
-                    </a>
-                  </div>
-                  </div>
-                 </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Voltar</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Avançar</span>
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="gray-background">
-            <div class="header-inner-content">
-              <div class="header-bottom-side exclusive-container">
-                <div class="header-bottom-side-left">
-                  <h2>Casas de Massagem</h2>
-                  <p>
-                    Aqui você também encontra as melhores casas de massagens do
-                    Rio de Janeiro... Seu prazer em primeiro lugar!
-                  </p>
-                  <button class="btnVermais">Ver Agora &#8594;</button>
-                </div>
-                <div class="header-bottom-side-right">
-                  <img src=" https://massagemvips.vercel.app/images/exclusive.png" alt="" />
-                </div>
-              </div>
-            </div>
-        <div class="page-inner-content">
-          <div class="testimonials">
-            <div class="testimonial">
-              <p>"</p>
-              <p>
-                A massagista Anny é uma excelente profissional, voltarei mais
-                vezes sem dúvidas
-              </p>
+            <div class="product">
+              <img src="https://massagemvips.vercel.app/images/products/product-5.jpg" alt="" />
+              <p class="product-name">Massagista</p>
               <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              <p>Juliano Ianov.</p>
+              <p class="product-price">Massagens <span>Terapêuticas</span></p>
+              <a href="https://api.whatsapp.com/send?phone=+5521965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver mais
+                pelo WhatsApp
+              </a>
             </div>
-
-            <div class="testimonial">
-              <p>"</p>
-              <p>De todos os sites, esse é o melhor!!</p>
+            <div class="product">
+              <img src="https://massagemvips.vercel.app/images/products/product-6.jpg" alt="" />
+              <p class="product-name">Massagista</p>
               <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-              <p>Marcelão</p>
+              <p class="product-price">Massagens <span>Terapêuticas</span></p>
+              <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver mais
+                pelo WhatsApp
+              </a>
             </div>
-
-            <div class="testimonial">
-              <p>"</p>
-              <p>
-                O site tem a parte de massagem misteriosa, para quem é diferente
-                igual a mim, recomendo!
-              </p>
+            <div class="product">
+              <img src="https://massagemvips.vercel.app/images/products/product-7.jpg" alt="" />
+              <p class="product-name">Massagista</p>
               <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-              <p>Felipe M.</p>
-            </div>
+              <p class="product-price">Massagens <span>Terapêuticas</span></p>
+              <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver mais
+                pelo WhatsApp
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-      <link
-        <link
-        rel="stylesheet"
-        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"
-      />
-      <a
-        id="robbu-whatsapp-button"
-        target="_blank"
-        href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
-      >
-        <div class="rwb-tooltip">Anuncie Aqui</div>
-        <img
-          src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
-        />
-      </a>
-    </main>
-
-    <footer class="gray-background">
-      <div class="page-inner-content footer-content">
-        <div class="download-options">
-          <p>baixe nossa aplicação</p>
-          <p>baixe nossa aplicação para Androind e IOS</p>
           <div>
-            <img src="https://massagemvips.vercel.app/images/app-store.png" alt="" />
-            <img src="https://massagemvips.vercel.app/images/play-store.png " alt="" />
+            <div class="page-inner-content">
+              <h3 class="section-title">Massagistas & Massoterapêutas</h3>
+              <div class="subtitle-underline"></div>
+              <div class="cols cols-4">
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-4.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=+5521966377524&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-5.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-6.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-8.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-9.jpg" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens<span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens <span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="https://massagemvips.vercel.app/images/products/product-7.png" alt="" />
+                  <p class="product-name">Massagista</p>
+                  <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                  <p class="product-price">
+                    Massagens<span>Terapêuticas</span>
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os."
+                    class="btnVermais" style="background-color: rgb(57, 224, 71)"><i class="fab fa-whatsapp"></i>Ver
+                    mais pelo WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="footer-inner-content">
-          <div class="footer-about">
-            <h4>Sobre Nós</h4>
+    <div class="gray-background">
+      <div class="header-inner-content">
+        <div class="header-bottom-side exclusive-container">
+          <div class="header-bottom-side-left">
+            <h2>Casas de Massagem</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+              Aqui você também encontra as melhores casas de massagens do
+              Rio de Janeiro... Seu prazer em primeiro lugar!
             </p>
+            <button class="btnVermais">Ver Agora &#8594;</button>
           </div>
-          <div class="footer-contact">
-            <h4>Contato</h4>
-            <p>Telefone: (21) 1234-5678</p>
-            <p>Email: contato@massagemvips.com</p>
-          </div>
-          <div class="footer-social">
-            <h4>Redes Sociais</h4>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+          <div class="header-bottom-side-right">
+            <img src=" https://massagemvips.vercel.app/images/exclusive.png" alt="" />
           </div>
         </div>
+      </div>
+      <div class="page-inner-content">
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>"</p>
+            <p>
+              A massagista Anny é uma excelente profissional, voltarei mais
+              vezes sem dúvidas
+            </p>
+            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p>Juliano Ianov.</p>
+          </div>
 
-        <div class="logo-footer">
-          <h1 class="logo">MASSAGEM<span>VIPS</span></h1>
-          <p>O seu site de massagens</p>
+          <div class="testimonial">
+            <p>"</p>
+            <p>De todos os sites, esse é o melhor!!</p>
+            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p>Marcelão</p>
+          </div>
+
+          <div class="testimonial">
+            <p>"</p>
+            <p>
+              O site tem a parte de massagem misteriosa, para quem é diferente
+              igual a mim, recomendo!
+            </p>
+            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p>Felipe M.</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <link <link rel="stylesheet"
+    href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css" />
+  <a id="robbu-whatsapp-button" target="_blank"
+    href="https://api.whatsapp.com/send?phone=21965493980&text=Oi,%20vi%20seu%20an%C3%BAncio%20no%20site%20massagensvip.com.br,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os.">
+    <div class="rwb-tooltip">Anuncie Aqui</div>
+    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" />
+  </a>
+  </main>
 
-        <div class="links-footer">
-          <h3>links</h3>
-          <ul>
-            <li><a href="#">Cupons</a></li>
-            <li><a href="#">Políticas</a></li>
-            <li><a href="#">Termos de Uso</a></li>
-            <li><a href="#">Seja sócio vip</a></li>
-          </ul>
+  <footer class="gray-background">
+    <div class="page-inner-content footer-content">
+      <div class="download-options">
+        <p>baixe nossa aplicação</p>
+        <p>baixe nossa aplicação para Androind e IOS</p>
+        <div>
+          <img src="https://massagemvips.vercel.app/images/app-store.png" alt="" />
+          <img src="https://massagemvips.vercel.app/images/play-store.png " alt="" />
         </div>
       </div>
 
-      <hr class="page-inner-content" />
-
-      <div class="page-inner-content copyright">
-        <p>copyright 2024 - MassagemVips - Todos os Direitos Reservados</p>
+      <div class="footer-inner-content">
+        <div class="footer-about">
+          <h4>Sobre Nós</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Telefone: (21) 1234-5678</p>
+          <p>Email: contato@massagemvips.com</p>
+        </div>
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-    </footer>
 
-    <script>
-      const navbar = document.querySelector(".navbar");
-      const menuButton = document.querySelector(".menu-button");
+      <div class="logo-footer">
+        <h1 class="logo">MASSAGEM<span>VIPS</span></h1>
+        <p>O seu site de massagens</p>
+      </div>
 
-      menuButton.addEventListener("click", () => {
-        navbar.classList.toggle("show-menu");
-      });
-    </script>
-    
- 
+      <div class="links-footer">
+        <h3>links</h3>
+        <ul>
+          <li><a href="#">Cupons</a></li>
+          <li><a href="#">Políticas</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Seja sócio vip</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <script>
-      // Obtém a referência para o modal principal
-      var modal = document.getElementById("myModal");
+    <hr class="page-inner-content" />
 
-      // Obtém a referência para a imagem principal
-      var img = document.querySelector(".product img");
+    <div class="page-inner-content copyright">
+      <p>copyright 2024 - MassagemVips - Todos os Direitos Reservados</p>
+    </div>
+  </footer>
 
-      // Obtém a referência para o elemento que fecha o modal principal
-      var span = document.querySelector("#myModal .close");
+  <script>
+    const navbar = document.querySelector(".navbar");
+    const menuButton = document.querySelector(".menu-button");
 
-      // Obtém a referência para as imagens dentro do modal principal
-      var modalImgs = document.querySelectorAll("#myModal img");
+    menuButton.addEventListener("click", () => {
+      navbar.classList.toggle("show-menu");
+    });
+  </script>
 
-      // Obtém a referência para o elemento de sobreposição
-      var overlay = document.getElementById("overlay");
 
-      // Quando o usuário clicar na imagem principal, abre o modal principal e exibe o overlay
-      img.onclick = function () {
-        modal.style.display = "block";
-        overlay.style.display = "block";
+
+  <script>
+    // Obtém a referência para o modal principal
+    var modal = document.getElementById("myModal");
+
+    // Obtém a referência para a imagem principal
+    var img = document.querySelector(".product img");
+
+    // Obtém a referência para o elemento que fecha o modal principal
+    var span = document.querySelector("#myModal .close");
+
+    // Obtém a referência para as imagens dentro do modal principal
+    var modalImgs = document.querySelectorAll("#myModal img");
+
+    // Obtém a referência para o elemento de sobreposição
+    var overlay = document.getElementById("overlay");
+
+    // Quando o usuário clicar na imagem principal, abre o modal principal e exibe o overlay
+    img.onclick = function () {
+      modal.style.display = "block";
+      overlay.style.display = "block";
+    };
+
+    // Quando o usuário clicar no botão de fechar (x) do modal principal, fecha o modal principal e esconde o overlay
+    span.onclick = function () {
+      modal.style.display = "none";
+      overlay.style.display = "none";
+    };
+
+    // Evita o fechamento do modal principal quando o usuário clica nas imagens dentro dele
+    modalImgs.forEach(function (img) {
+      img.onclick = function (event) {
+        event.stopPropagation();
       };
+    });
 
-      // Quando o usuário clicar no botão de fechar (x) do modal principal, fecha o modal principal e esconde o overlay
-      span.onclick = function () {
+    // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
+    modal.onmouseleave = function () {
+      modal.style.display = "none";
+      overlay.style.display = "none";
+    };
+
+    // Fecha o modal principal e esconde o overlay quando o usuário clica fora dele
+    window.onclick = function (event) {
+      if (event.target == overlay) {
         modal.style.display = "none";
         overlay.style.display = "none";
-      };
+      }
+    };
+  </script>
+  <script>
+    // Obtém a referência para o modal principal do product-5
+    var modalProduct5 = document.getElementById("myModalProduct5");
 
-      // Evita o fechamento do modal principal quando o usuário clica nas imagens dentro dele
-      modalImgs.forEach(function (img) {
-        img.onclick = function (event) {
-          event.stopPropagation();
-        };
-      });
+    // Obtém a referência para a imagem do product-5
+    var imgProduct5 = document.querySelector(".product img[src='https://massagemvips.vercel.app/images/products/product-5.jpg']");
 
-      // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
-      modal.onmouseleave = function () {
-        modal.style.display = "none";
-        overlay.style.display = "none";
-      };
+    // Obtém a referência para o botão de fechar (x) do modal principal do product-5
+    var spanProduct5 = document.querySelector("#myModalProduct5 .close");
 
-      // Fecha o modal principal e esconde o overlay quando o usuário clica fora dele
-      window.onclick = function (event) {
-        if (event.target == overlay) {
-          modal.style.display = "none";
-          overlay.style.display = "none";
-        }
-      };
-    </script>
-    <script>
-      // Obtém a referência para o modal principal do product-5
-      var modalProduct5 = document.getElementById("myModalProduct5");
-    
-      // Obtém a referência para a imagem do product-5
-      var imgProduct5 = document.querySelector(".product img[src='https://massagemvips.vercel.app/images/products/product-5.jpg']");
-    
-      // Obtém a referência para o botão de fechar (x) do modal principal do product-5
-      var spanProduct5 = document.querySelector("#myModalProduct5 .close");
-    
-      // Obtém a referência para o elemento de sobreposição do product-5
-      var overlayProduct5 = document.getElementById("overlayProduct5");
-    
-      // Quando o usuário clicar na imagem do product-5, abre o modal principal e exibe o overlay
-      imgProduct5.onclick = function () {
-        modalProduct5.style.display = "block";
-        overlayProduct5.style.display = "block";
-      };
-    
-      // Quando o usuário clicar no botão de fechar (x) do modal principal do product-5, fecha o modal principal e esconde o overlay
-      spanProduct5.onclick = function () {
+    // Obtém a referência para o elemento de sobreposição do product-5
+    var overlayProduct5 = document.getElementById("overlayProduct5");
+
+    // Quando o usuário clicar na imagem do product-5, abre o modal principal e exibe o overlay
+    imgProduct5.onclick = function () {
+      modalProduct5.style.display = "block";
+      overlayProduct5.style.display = "block";
+    };
+
+    // Quando o usuário clicar no botão de fechar (x) do modal principal do product-5, fecha o modal principal e esconde o overlay
+    spanProduct5.onclick = function () {
+      modalProduct5.style.display = "none";
+      overlayProduct5.style.display = "none";
+    };
+
+    // Fecha o modal principal do product-5 e esconde o overlay quando o usuário clica fora dele
+    window.onclick = function (event) {
+      if (event.target == overlayProduct5) {
         modalProduct5.style.display = "none";
         overlayProduct5.style.display = "none";
-      };
-    
-      // Fecha o modal principal do product-5 e esconde o overlay quando o usuário clica fora dele
-      window.onclick = function (event) {
-        if (event.target == overlayProduct5) {
-          modalProduct5.style.display = "none";
-          overlayProduct5.style.display = "none";
-        }
-        };
-        // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
-      modalProduct5.onmouseleave = function () {
-        modalProduct5.style.display = "none";
-        overlayProduct5.style.display = "none";
-      };
-
-    </script>
-    
-    
-    <script>
-      function openModal() {
-        document.getElementById("myModal").style.display = "block"; // Exibe o modal
-        document.getElementById("overlay").style.display = "block"; // Exibe o overlay
       }
+    };
+    // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
+    modalProduct5.onmouseleave = function () {
+      modalProduct5.style.display = "none";
+      overlayProduct5.style.display = "none";
+    };
 
-      // Função para fechar o modal
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none"; // Oculta o modal
-        document.getElementById("overlay").style.display = "none"; // Oculta o overlay
-      }
-    </script>
-    
-  </body>
+  </script>
+
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block"; // Exibe o modal
+      document.getElementById("overlay").style.display = "block"; // Exibe o overlay
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none"; // Oculta o modal
+      document.getElementById("overlay").style.display = "none"; // Oculta o overlay
+    }
+  </script>
+
+</body>
+
 </html>
