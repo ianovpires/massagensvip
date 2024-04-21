@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
 }
@@ -124,12 +124,18 @@ header {
   background-color: rgb(4, 88, 32);
   border: none;
   cursor: pointer;
-  /* padding: 0.8rem 3.8rem; retirando para poder ocupar o botão*/
+  padding: 0.5rem;
   border-radius: 9999px;
   color: #fff;
   font-weight: 500;
-  font-size: 1rem
+  font-size: 1rem;
+  text-decoration: none;
 }
+
+.btnVermais i {
+  margin-right: 0.3125rem;
+}
+
 
 .header-bottom-side-right {
   flex-basis: 50%;
