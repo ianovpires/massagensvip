@@ -1,5 +1,6 @@
 * {
-  /* box-sizing: border-box; */
+  
+  
   padding: 0;
   margin: 0;
 }
@@ -153,6 +154,11 @@ header {
 }
 
 /* Media Queries */
+@media (max-width: 667px) {
+  .btnVermais {
+    font-size: 0.5rem;
+  }
+
 @media (max-width: 800px) {
   .logo {
     font-size: 1.2rem;
@@ -188,6 +194,11 @@ header {
     text-align: center;
     padding: 0.8rem;
   }
+
+  .btnVermais {
+    font-size: 0.7rem;
+  }
+
 }
 
 
@@ -662,19 +673,19 @@ footer {
     overflow: hidden;
 
     &:nth-of-type(1) {
-      background: url("https://massagemvips.vercel.app/images/products/product-4.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url("https://massagemvips.vercel.app/images/products/product-4.jpg")
         no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("https://massagemvips.vercel.app/images/products/product4-2.JPG?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url("https://massagemvips.vercel.app/images/products/product5-2.JPG")
         no-repeat 50% / cover;
     }
     &:nth-of-type(3) {
-      background: url("https://massagemvips.vercel.app/images/products/product4-3.JPG?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url("https://massagemvips.vercel.app/images/products/product-6.jpg")
         no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("https://massagemvips.vercel.app/images/products/product4-4.JPG?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url("https://massagemvips.vercel.app/images/products/product4-4.JPG")
         no-repeat 50% / cover;
     }
 
@@ -718,4 +729,3 @@ footer {
     }
   }
 }
-
