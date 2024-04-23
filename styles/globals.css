@@ -158,6 +158,7 @@ header {
   .btnVermais {
     font-size: 0.5rem;
   }
+}
 
 @media (max-width: 800px) {
   .logo {
@@ -621,40 +622,41 @@ footer {
   height: auto; /* Mantém a proporção da imagem */
 }
 
-#myModalProduct5 .modal-content img {
-  width: 100%; /* Garantir que a imagem ocupe toda a largura do modal */
-  height: auto; /* Manter a proporção da imagem */
-  display: block; /* Garantir que a imagem seja exibida como um bloco */
-  margin: 0 auto; /* Alinhar a imagem ao centro horizontalmente */
-}
+  #myModalProduct5 .modal-content img {
+    width: 100%; /* Garantir que a imagem ocupe toda a largura do modal */
+    height: auto; /* Manter a proporção da imagem */
+    display: block; /* Garantir que a imagem seja exibida como um bloco */
+    margin: 0 auto; /* Alinhar a imagem ao centro horizontalmente */
+  }
 
-#myModalProduct5 .close {
-  color: #aaa; /* Cor do botão de fechar */
-  position: absolute; /* Posição absoluta para o botão */
-  top: 20px; /* Distância do topo */
-  right: 20px; /* Distância da direita */
-  font-size: 28px; /* Tamanho da fonte do botão */
-  font-weight: bold; /* Negrito para o botão */
-  cursor: pointer; /* Altera o cursor para o botão */
-}
+  #myModalProduct5 .close {
+    color: #aaa; /* Cor do botão de fechar */
+    position: absolute; /* Posição absoluta para o botão */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    font-size: 28px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Negrito para o botão */
+    cursor: pointer; /* Altera o cursor para o botão */
+  }
 
-#myModalProduct5 .close:hover,
-#myModalProduct5 .close:focus {
-  color: black; /* Cor do botão de fechar ao passar o mouse */
-  text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
-}
+  #myModalProduct5 .close:hover,
+  #myModalProduct5 .close:focus {
+    color: black; /* Cor do botão de fechar ao passar o mouse */
+    text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
+  }
 
-#overlayProduct5 {
-  display: none; /* Oculta o elemento de sobreposição por padrão */
-  position: fixed; /* Posição fixa */
-  top: 0; /* Alinha o elemento de sobreposição ao topo da janela */
-  left: 0; /* Alinha o elemento de sobreposição à esquerda da janela */
-  width: 100%; /* Largura total */
-  height: 100%; /* Altura total */
-  background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
-  z-index: 9998; /* Z-index menor que o modal para que fique por trás dele */
-}
+  #overlayProduct5 {
+    display: none; /* Oculta o elemento de sobreposição por padrão */
+    position: fixed; /* Posição fixa */
+    top: 0; /* Alinha o elemento de sobreposição ao topo da janela */
+    left: 0; /* Alinha o elemento de sobreposição à esquerda da janela */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+    z-index: 9998; /* Z-index menor que o modal para que fique por trás dele */
+  }
 
+  
 /* Parte de css com novas inclusões em teste */
 .container {
   width: 100%;
@@ -726,6 +728,6 @@ footer {
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
-    }
+     }
+   }
   }
-}
