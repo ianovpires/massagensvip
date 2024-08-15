@@ -336,6 +336,23 @@ main {
 }
 
 /* Media queries */
+/* Estilos para telas pequenas e médias */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Ajusta a largura do container para telas menores */
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 576px) {
+  .container {
+    width: 100%; /* Ajusta a largura do container para dispositivos móveis */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+  }
+}
 
 @media (max-width: 800px) {
   .section-title {
