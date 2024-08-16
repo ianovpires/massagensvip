@@ -471,11 +471,18 @@
   </footer>
 
   <script>
-    const navbar = document.querySelector(".navbar");
-    const menuButton = document.querySelector(".menu-button");
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbar = document.querySelector(".navbar");
+      const menuButton = document.querySelector(".menu-button");
 
-    menuButton.addEventListener("click", () => {
-      navbar.classList.toggle("show-menu");
+      if (navbar && menuButton) {
+        menuButton.addEventListener("click", () => {
+          console.log("Menu button clicked");
+          navbar.classList.toggle("show-menu");
+        });
+      } else {
+        console.error("Navbar or menuButton not found");
+      }
     });
   </script>
 
