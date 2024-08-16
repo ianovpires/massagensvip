@@ -41,7 +41,7 @@ body {
   color: #ff0000;
 }
 .logo-image {
-  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 280px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto; /* Mantém a proporção da imagem */
   margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
