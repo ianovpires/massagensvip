@@ -95,6 +95,10 @@ nav ul li:hover {
 .menu-button {
   display: none;
 }
+.close-button {
+  cursor: pointer;
+  display: none; /* Oculta o botão de fechar por padrão */
+}
 
 header {
   background-image: radial-gradient(#fff, #c7c7c7);
