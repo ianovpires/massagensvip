@@ -65,11 +65,52 @@
           <button>Ver Agora &#8594;</button>
         </div>
         <div class="header-bottom-side-right">
-          <img src="https://massagemvips.vercel.app/images/products/banner-5.jpg" alt="" />
+          <div id="media-container" style="width: 520px; height: 340px;">
+            <img id="image-element" src="https://massagemvips.vercel.app/images/products/banner-5.jpg" alt="" style="display: block; width: 100%; height: 100%;" />
+            <video id="video-element" style="display: none; width: 100%; height: 100%;" muted loop>
+              <source src="images/videos/fumact.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
     </div>
   </header>
+  
+  <script>
+    const mediaItems = [
+      { type: 'image', src: 'https://massagemvips.vercel.app/images/products/banner-5.jpg' },
+      { type: 'image', src: 'images/products/banner-3.avif' },
+      { type: 'image', src: 'images/products/banner-4.avif' },
+      { type: 'video', src: 'images/videos/fumacat.mp4' }
+    ];
+  
+    const imageElement = document.getElementById('image-element');
+    const videoElement = document.getElementById('video-element');
+    let currentMediaIndex1 = 0;
+  
+    function playMedia() {
+      const currentMedia = mediaItems[currentMediaIndex];
+  
+      if (currentMedia.type === 'image') {
+        imageElement.src = currentMedia.src;
+        imageElement.style.display = 'block';
+        videoElement.style.display = 'none';
+      } else if (currentMedia.type === 'video') {
+        videoElement.querySelector('source').src = currentMedia.src;
+        videoElement.style.display = 'block';
+        imageElement.style.display = 'none';
+        videoElement.load();
+        videoElement.play();
+      }
+  
+      currentMediaIndex1 = (currentMediaIndex + 1) % mediaItems.length;
+    }
+  
+    setInterval(playMedia, 5000); 
+  
+    playMedia(); 
+  </script>
 
   <!-- Main Content -->
   <div class="gray-background ">
@@ -195,7 +236,7 @@
                   </a>
                 </div>
                 <div class="product">
-                  <img src="https://massagemvips.vercel.app/images/products/product-7.jpg" alt="" />
+                  <img src="https://massagemvips.vercel.app/images/products/anuncieaqui.jpg" alt="" />
                   <p class="product-name">Massagista</p>
                   <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                   <p class="product-price">
@@ -207,7 +248,7 @@
                   </a>
                 </div>
                 <div class="product">
-                  <img src="https://massagemvips.vercel.app/images/products/product-8.jpg" alt="" />
+                  <img src="https://massagemvips.vercel.app/images/products/anuncieaqui.jpg" alt="" />
                   <p class="product-name">Massagista</p>
                   <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                   <p class="product-price">
@@ -219,7 +260,7 @@
                   </a>
                 </div>
                 <div class="product">
-                  <img src="https://massagemvips.vercel.app/images/products/product-8.jpg" alt="" />
+                  <img src="https://massagemvips.vercel.app/images/products/anuncieaqui.jpg" alt="" />
                   <p class="product-name">Massagista</p>
                   <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                   <p class="product-price">
@@ -231,7 +272,7 @@
                   </a>
                 </div>
                 <div class="product">
-                  <img src="https://massagemvips.vercel.app/images/products/product-7.jpg" alt="" />
+                  <img src="https://massagemvips.vercel.app/images/products/anuncieaqui.jpg" alt="" />
                   <p class="product-name">Massagista</p>
                   <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                   <p class="product-price">
@@ -274,32 +315,63 @@
             <button class="btnVermais">Ver Agora &#8594;</button>
           </div>
           <div class="header-bottom-side-right">
-            <video id="video-player" width="520" height="340" controls muted autoplay>
-              <source src="images/videos/teste.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div id="media-container" class="neon-border" style="width: 520px; height: 340px;">
+              <video id="video-player" width="520" height="340" controls muted autoplay>
+                <source src="images/videos/teste.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <img id="image-player" style="display: none; width: 520px; height: 340px;" />
+            </div>
           </div>
         </div>
       </div>
     </div>
     
     <script>
-      const videos = [
-        'images/videos/teste.mp4',
-        'images/videos/teste5.mp4',
-        'images/videos/teste6.mp4',
-        'images/videos/teste7.mp4'
+      const media = [
+        { type: 'video', src: 'images/videos/teste.mp4' },
+        { type: 'video', src: 'images/videos/teste5.mp4' },
+        { type: 'video', src: 'images/videos/teste6.mp4' },
+        { type: 'video', src: 'images/videos/teste7.mp4' },
+        { type: 'image', src: 'images/products/m2.png' },
+        { type: 'image', src: 'images/products/m5.png' },
+        { type: 'image', src: 'images/products/m6.png' },
+        { type: 'image', src: 'images/products/m7.png' }
       ];
-    
+  
       const videoPlayer = document.getElementById('video-player');
-      let currentVideoIndex = 0;
-    
+      const imagePlayer = document.getElementById('image-player');
+      let currentMediaIndex = 0;
+  
+      function playMedia() {
+        const currentMedia = media[currentMediaIndex];
+  
+        if (currentMedia.type === 'video') {
+          videoPlayer.style.display = 'block';
+          imagePlayer.style.display = 'none';
+          videoPlayer.querySelector('source').src = currentMedia.src;
+          videoPlayer.load();
+          videoPlayer.play();
+        } else if (currentMedia.type === 'image') {
+          videoPlayer.style.display = 'none';
+          imagePlayer.style.display = 'block';
+          imagePlayer.src = currentMedia.src;
+        }
+      }
+  
       videoPlayer.addEventListener('ended', () => {
-        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-        videoPlayer.querySelector('source').src = videos[currentVideoIndex];
-        videoPlayer.load(); 
-        videoPlayer.play(); 
+        currentMediaIndex = (currentMediaIndex + 1) % media.length;
+        playMedia();
       });
+  
+      imagePlayer.addEventListener('load', () => {
+        setTimeout(() => {
+          currentMediaIndex = (currentMediaIndex + 1) % media.length;
+          playMedia();
+        }, 3000); // Troca de imagem após 3 segundos
+      });
+  
+      playMedia(); // Inicia a reprodução
     </script>
       <div class="page-inner-content">
         <div class="gray-background">
@@ -385,7 +457,7 @@
         <ul>
           <li><a href="#">Cupons</a></li>
           <li><a href="#">Políticas</a></li>
-          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="termos-de-uso.html">Termos de Uso</a></li>
           <li><a href="#">Seja sócio vip</a></li>
         </ul>
       </div>
@@ -405,111 +477,6 @@
     menuButton.addEventListener("click", () => {
       navbar.classList.toggle("show-menu");
     });
-  </script>
-
-
-
-  <script>
-    // Obtém a referência para o modal principal
-    var modal = document.getElementById("myModal");
-
-    // Obtém a referência para a imagem principal
-    var img = document.querySelector(".product img");
-
-    // Obtém a referência para o elemento que fecha o modal principal
-    var span = document.querySelector("#myModal .close");
-
-    // Obtém a referência para as imagens dentro do modal principal
-    var modalImgs = document.querySelectorAll("#myModal img");
-
-    // Obtém a referência para o elemento de sobreposição
-    var overlay = document.getElementById("overlay");
-
-    // Quando o usuário clicar na imagem principal, abre o modal principal e exibe o overlay
-    img.onclick = function () {
-      modal.style.display = "block";
-      overlay.style.display = "block";
-    };
-
-    // Quando o usuário clicar no botão de fechar (x) do modal principal, fecha o modal principal e esconde o overlay
-    span.onclick = function () {
-      modal.style.display = "none";
-      overlay.style.display = "none";
-    };
-
-    // Evita o fechamento do modal principal quando o usuário clica nas imagens dentro dele
-    modalImgs.forEach(function (img) {
-      img.onclick = function (event) {
-        event.stopPropagation();
-      };
-    });
-
-    // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
-    modal.onmouseleave = function () {
-      modal.style.display = "none";
-      overlay.style.display = "none";
-    };
-
-    // Fecha o modal principal e esconde o overlay quando o usuário clica fora dele
-    window.onclick = function (event) {
-      if (event.target == overlay) {
-        modal.style.display = "none";
-        overlay.style.display = "none";
-      }
-    };
-  </script>
-  <script>
-    // Obtém a referência para o modal principal do product-5
-    var modalProduct5 = document.getElementById("myModalProduct5");
-
-    // Obtém a referência para a imagem do product-5
-    var imgProduct5 = document.querySelector(".product img[src='https://massagemvips.vercel.app/images/products/product-5.jpg']");
-
-    // Obtém a referência para o botão de fechar (x) do modal principal do product-5
-    var spanProduct5 = document.querySelector("#myModalProduct5 .close");
-
-    // Obtém a referência para o elemento de sobreposição do product-5
-    var overlayProduct5 = document.getElementById("overlayProduct5");
-
-    // Quando o usuário clicar na imagem do product-5, abre o modal principal e exibe o overlay
-    imgProduct5.onclick = function () {
-      modalProduct5.style.display = "block";
-      overlayProduct5.style.display = "block";
-    };
-
-    // Quando o usuário clicar no botão de fechar (x) do modal principal do product-5, fecha o modal principal e esconde o overlay
-    spanProduct5.onclick = function () {
-      modalProduct5.style.display = "none";
-      overlayProduct5.style.display = "none";
-    };
-
-    // Fecha o modal principal do product-5 e esconde o overlay quando o usuário clica fora dele
-    window.onclick = function (event) {
-      if (event.target == overlayProduct5) {
-        modalProduct5.style.display = "none";
-        overlayProduct5.style.display = "none";
-      }
-    };
-    // Fecha o modal principal e esconde o overlay quando o usuário move o mouse para fora do modal
-    modalProduct5.onmouseleave = function () {
-      modalProduct5.style.display = "none";
-      overlayProduct5.style.display = "none";
-    };
-
-  </script>
-
-
-  <script>
-    function openModal() {
-      document.getElementById("myModal").style.display = "block"; // Exibe o modal
-      document.getElementById("overlay").style.display = "block"; // Exibe o overlay
-    }
-
-    // Função para fechar o modal
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none"; // Oculta o modal
-      document.getElementById("overlay").style.display = "none"; // Oculta o overlay
-    }
   </script>
 
 </body>
