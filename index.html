@@ -19,6 +19,15 @@
     }
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZBTWPLQJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EZBTWPLQJ9');
+</script>
 
 <body>
   <div class="navbar">
@@ -42,7 +51,7 @@
       <div class="nav-icon-container">
         <img src="https://massagemvips.vercel.app/images/cart.png" />
         <img src="https://massagemvips.vercel.app/images/menu.png" class="menu-button" />
-        <img src="https://massagemvips.vercel.app/images/close.png" class="close-button" style="display: none;" />
+        <img src="https://massagemvips.vercel.app/images/close.png" class="close-button" />
       </div>
     </div>
   </div>
@@ -470,10 +479,12 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+   document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const menuButton = document.querySelector(".menu-button");
   const closeButton = document.querySelector(".close-button");
+
+  console.log(navbar, menuButton, closeButton); // Verifica se os elementos são encontrados
 
   if (navbar && menuButton && closeButton) {
     menuButton.addEventListener("click", () => {
@@ -483,6 +494,7 @@
     });
 
     closeButton.addEventListener("click", () => {
+      console.log("Close button clicked");
       navbar.classList.remove("show-menu"); // Remove a classe para ocultar o menu
       closeButton.style.display = 'none'; // Oculta o botão de fechar quando o menu está fechado
     });
