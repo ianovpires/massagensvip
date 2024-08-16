@@ -1,20 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
-  
-  
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  max-width: 100%;
 }
 /*Unidade de medida relativa 1rem equivale a 16px*/
 body {
-  /* font-size: 1rem;  */
+  font-size: 1rem; /* Tamanho base da fonte, ajustável conforme necessário */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  max-width: 100%; /* Garante que o body não ultrapasse a tela */
 }
 
-/* header*/
-
+/* Header */
 .header-inner-content {
-  max-width: 81.25rem; /*Largura maxima  1300px / 16 = 70*/
+  max-width: 81.25rem; /* Largura máxima */
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem; /* Adiciona um pouco de padding lateral */
 }
 
 .section-title {
@@ -35,11 +42,14 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
 }
 
 .logo {
   color: #ff0000;
+  font-size: 2rem; /* Tamanho ajustável conforme o design */
 }
+
 .logo-image {
   width: 280px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto; /* Mantém a proporção da imagem */
@@ -50,6 +60,9 @@ nav ul {
   display: flex;
   list-style: none;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
 }
 
 .nav-icon-container {
@@ -58,23 +71,24 @@ nav ul {
 }
 
 .nav-icon-container img {
-  width: 1.875rem; /*Largura 30px divido por 16 = 1.875rem */
+  width: 1.875rem; /* Largura 30px dividido por 16 = 1.875rem */
   cursor: pointer;
+  
 }
 
 .nav-icon-container img:first-child {
-  margin-right: 10rem; /*1600px*/
+  margin-right: 1rem; /* Espaço entre os ícones */
 }
 
 nav ul li {
   color: #fff;
   margin-right: 1.5rem;
   cursor: pointer;
+  transition: transform 0.2s, font-weight 0.2s;
 }
 
 nav ul li:hover {
   transform: translateY(-5px);
-  transition: all 0.2s;
   font-weight: bold;
 }
 
@@ -89,22 +103,23 @@ header {
 .header-bottom-side {
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: space-between;
   padding: 1rem;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
 }
 
 .header-bottom-side-left {
-  height: 100%;
-  flex-basis: 50%;
+  flex: 1;
+  padding: 1rem;
 }
 
 .header-bottom-side-left h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem; /* Ajustado para diferentes tamanhos de tela */
   margin-bottom: 1.5rem;
 }
 
 .header-bottom-side-left p {
-  line-height: 1.5rem;
+  line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
@@ -125,8 +140,8 @@ header {
 
 .btnVermais {
   display: flex;
-  align-items: center; /*Alinhamento ao centro*/
-  justify-content: center; /*Justificado ao centro*/
+  align-items: center;
+  justify-content: center;
   background-color: rgb(4, 88, 32);
   border: none;
   cursor: pointer;
@@ -142,9 +157,8 @@ header {
   margin-right: 0.3125rem;
 }
 
-
 .header-bottom-side-right {
-  flex-basis: 50%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,15 +173,11 @@ header {
 }
 
 /* Media Queries */
-@media (max-width: 667px) {
-  .btnVermais {
-    font-size: 0.5rem;
-  }
-}
 
+/* Para telas pequenas e médias */
 @media (max-width: 800px) {
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte */
   }
 
   .menu-button {
@@ -177,14 +187,14 @@ header {
   .header-bottom-side {
     flex-direction: column;
     text-align: center;
-    padding-top: 4rem;
+    padding: 2rem 1rem; /* Ajusta o padding para telas menores */
   }
 
   nav {
     position: absolute;
     background-color: #2c2c2c;
     width: 100%;
-    top: 2.875rem; /*46px divido 16px */
+    top: 3rem;
     display: none;
   }
 
@@ -194,27 +204,57 @@ header {
 
   nav ul {
     flex-direction: column;
+    padding: 0;
   }
 
   nav ul li {
     text-align: center;
     padding: 0.8rem;
+    margin: 0;
   }
 
   .btnVermais {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
+  .header-bottom-side-left h2 {
+    font-size: 2rem; /* Ajustado para diferentes tamanhos de tela */
+  }
+
+  .header-bottom-side-left p {
+    font-size: 0.9rem; /* Ajustado para diferentes tamanhos de tela */
+  }
+
+  .header-bottom-side-left button {
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem;
+  }
 }
 
-
-/* Media query para telas menores atoe 168px */
-@media only screen and (max-width: 768px) {
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
   body {
-    font-size: 87.5%; /* Reduz o tamanho da fonte para telas menores  14 * 100/16 = 87.5% */
+    font-size: 50%; /* Reduz o tamanho da fonte */
+  }
+
+  .header-bottom-side-left h2 {
+    font-size: 1.5rem; /* Ajustado para telas muito pequenas */
+  }
+
+  .header-bottom-side-left p {
+    font-size: 0.8rem; /* Ajustado para telas muito pequenas */
+  }
+
+  .header-bottom-side-left button {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.5rem;
+  }
+
+  .btnVermais {
+    font-size: 0.8rem;
   }
 }
-/* Header */
+
 
 /* Main Content */
 main {
@@ -332,61 +372,113 @@ main {
 }
 
 .exclusive-container img {
-  max-width: 112.5rem; 
+  max-width: 100%; 
 }
 
+//* Estilos gerais */
+
 /* Media queries */
-/* Estilos para telas pequenas e médias */
+
+/* Estilos para telas pequenas e médias (até 768px) */
 @media (max-width: 768px) {
   .container {
     width: 95%; /* Ajusta a largura do container para telas menores */
-  }
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 576px) {
-  .container {
-    width: 100%; /* Ajusta a largura do container para dispositivos móveis */
+    padding: 0 10px; /* Adiciona um padding para evitar que o conteúdo toque as bordas */
   }
 
-  h1 {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
-  }
-}
-
-@media (max-width: 800px) {
   .section-title {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para títulos em telas menores */
   }
 
   .cols-3 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas menores */
   }
 
   .cols-4 {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Corrigindo a definição da propriedade grid-template-columns */
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas menores */
   }
 
   .product-name,
   .product-price,
   .rate {
-    max-height: 1rem;
-    overflow: hidden;
-    font-size: 0.8rem;
+    max-height: auto; /* Permite que o texto ocupe o espaço necessário */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
   }
 
   .exclusive-container {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Ajusta a direção do flex para coluna */
     display: flex;
   }
 
   .exclusive-container img {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem; /* Ajusta a margem inferior para melhor espaçamento */
   }
 }
+
+/* Estilos para dispositivos móveis (até 576px) */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%; /* Ajusta a largura do container para dispositivos móveis */
+    padding: 0 5px; /* Reduz o padding para evitar excesso de espaço nas bordas */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para cabeçalhos em dispositivos móveis */
+  }
+
+  .section-title {
+    font-size: 1rem; /* Reduz o tamanho da fonte para títulos em dispositivos móveis */
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(1, 1fr); /* Ajusta a grade para 1 coluna em dispositivos móveis */
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(1, 1fr); /* Ajusta a grade para 1 coluna em dispositivos móveis */
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+
+  .exclusive-container img {
+    margin-bottom: 1rem; /* Reduz a margem inferior em dispositivos móveis */
+  }
+}
+
+/* Estilos para telas médias (até 800px) */
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para títulos em telas médias */
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas médias */
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas médias */
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte para melhor legibilidade em telas médias */
+  }
+
+  .exclusive-container {
+    flex-direction: column; /* Mantém a direção do flex em coluna para telas médias */
+    display: flex;
+  }
+
+  .exclusive-container img {
+    margin-bottom: 3rem; /* Ajusta a margem inferior para melhor espaçamento em telas médias */
+  }
+}
+
 
 /* Main content */
 
@@ -587,99 +679,6 @@ footer {
   color: black; /* Cor do botão de fechar ao passar o mouse */
   text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
 }
-
-/* Estilo para as imagens dentro do modal */
-.modal-content img {
-  width: 100%; /* Garantir que a imagem ocupe toda a largura do modal */
-  height: auto; /* Manter a proporção da imagem */
-  display: block; /* Garantir que a imagem seja exibida como um bloco */
-  margin: 0 auto; /* Alinhar a imagem ao centro horizontalmente */
-}
-
-/* Estilos para o elemento de sobreposição */
-#overlay {
-  display: none; /* Oculta o elemento de sobreposição por padrão */
-  position: fixed; /* Posição fixa */
-  top: 0; /* Alinha o elemento de sobreposição ao topo da janela */
-  left: 0; /* Alinha o elemento de sobreposição à esquerda da janela */
-  width: 100%; /* Largura total */
-  height: 100%; /* Altura total */
-  background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
-  z-index: 9998; /* Z-index menor que o modal para que fique por trás dele */
-}
-
-/* Media queries para tornar o modal responsivo */
-@media only screen and (max-width: 600px) {
-  #myModal {
-    width: 100%; /* Reduz a largura do modal para telas menores */
-  }
-}
-
-@media only screen and (max-height: 400px) {
-  #myModal {
-    max-height: 100%; /* Reduz a altura máxima do modal para telas com altura menor */
-  }
-}
-#myModalProduct5 {
-  max-height: none; /* Permitir que o modal tenha altura ilimitada */
-  display: none; /* Ocultar o modal por padrão */
-  position: fixed; /* Posição fixa */
-  z-index: 9999; /* Z-index alto para garantir que o modal apareça na frente de outros elementos */
-  left: 50%; /* Coloca o modal na metade da largura da tela */
-  top: 50%; /* Coloca o modal na metade da altura da tela */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Centraliza o modal vertical e horizontalmente */
-  width: 80%; /* Largura do modal (ajustável conforme necessário) */
-  border-radius: 10px; /* Define o raio da borda para 10 pixels */
-  max-width: 800px; /* Define uma largura máxima para o modal (ajustável conforme necessário) */
-  height: auto; /* Altura automática */
-  overflow: auto; /* Adicionar rolagem se o conteúdo for maior que a janela */
-  background-color: #080808; /* Fundo do modal */
-  border: 2px solid #888; /* Adiciona uma borda ao modal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao modal */
-}
-
-#myModalProduct5 .modal-content {
-  position: relative; /* Posição relativa */
-  max-width: 100%; /* Define a largura máxima da imagem como 100% da largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-}
-
-  #myModalProduct5 .modal-content img {
-    width: 100%; /* Garantir que a imagem ocupe toda a largura do modal */
-    height: auto; /* Manter a proporção da imagem */
-    display: block; /* Garantir que a imagem seja exibida como um bloco */
-    margin: 0 auto; /* Alinhar a imagem ao centro horizontalmente */
-  }
-
-  #myModalProduct5 .close {
-    color: #aaa; /* Cor do botão de fechar */
-    position: absolute; /* Posição absoluta para o botão */
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da direita */
-    font-size: 28px; /* Tamanho da fonte do botão */
-    font-weight: bold; /* Negrito para o botão */
-    cursor: pointer; /* Altera o cursor para o botão */
-  }
-
-  #myModalProduct5 .close:hover,
-  #myModalProduct5 .close:focus {
-    color: black; /* Cor do botão de fechar ao passar o mouse */
-    text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
-  }
-
-  #overlayProduct5 {
-    display: none; /* Oculta o elemento de sobreposição por padrão */
-    position: fixed; /* Posição fixa */
-    top: 0; /* Alinha o elemento de sobreposição ao topo da janela */
-    left: 0; /* Alinha o elemento de sobreposição à esquerda da janela */
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
-    z-index: 9998; /* Z-index menor que o modal para que fique por trás dele */
-  }
 
   
 /* Parte de css com novas inclusões em teste */
