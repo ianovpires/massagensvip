@@ -659,13 +659,14 @@ footer {
   
 /* Parte de css com novas inclusões em teste */
 /* Estilo base */
+/* Parte de css com novas inclusões em teste */
+/*/* Parte de css com novas inclusões em teste */
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 400px;
   gap: 10px;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte em telas menores */
 
   > div {
     flex: 0 0 100px;
@@ -722,65 +723,14 @@ footer {
 
     &:hover {
       flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #f00505;
-      transform: translateY(-30px);
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
     }
 
     &:hover .content {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translatey(0%);
       visibility: visible;
-    }
+     }
+   }
   }
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .container {
-    height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
-    gap: 5px; /* Reduz o espaço entre os itens */
-  }
-
-  .container > div {
-    flex: 0 0 45%; /* Os itens ocupam quase metade da largura da tela */
-    margin-bottom: 10px; /* Adiciona espaçamento entre as linhas */
-  }
-
-  .container > div:hover {
-    flex: 0 0 90%; /* Quando em hover, os itens ocupam quase toda a largura */
-    transform: none; /* Remove o deslocamento para cima em telas menores */
-  }
-
-  .container > div .content {
-    font-size: 1.2rem; /* Diminui o tamanho do texto */
-    padding: 10px; /* Reduz o padding */
-  }
-
-  .container > div .content span {
-    font-size: 1rem; /* Diminui o tamanho do span */
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    gap: 5px;
-  }
-
-  .container > div {
-    flex: 0 0 100%; /* Os itens ocupam toda a largura da tela */
-    margin-bottom: 10px;
-  }
-
-  .container > div:hover {
-    flex: 0 0 100%; /* Quando em hover, os itens continuam ocupando toda a largura */
-  }
-
-  .container > div .content {
-    font-size: 1rem; /* Reduz ainda mais o tamanho do texto */
-    padding: 8px; /* Reduz o padding */
-  }
-
-  .container > div .content span {
-    font-size: 0.9rem; /* Reduz o tamanho do span */
-  }
-}
