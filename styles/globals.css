@@ -689,7 +689,7 @@ footer {
         no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("https://massagemvips.vercel.app/images/products/product-4-3.JPG")
+      background: url("https://massagemvips.vercel.app/images/products/product4-4.JPG")
         no-repeat 50% / cover;
     }
 
@@ -722,7 +722,7 @@ footer {
 
     &:hover {
       flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
+      box-shadow: 1px 3px 15px #f00505;
       transform: translateY(-30px);
     }
 
