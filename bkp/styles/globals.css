@@ -1,0 +1,736 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Inclui padding e bordas na largura total */
+  max-width: 100%;
+}
+/*Unidade de medida relativa 1rem equivale a 16px*/
+body {
+  font-size: 1rem; /* Tamanho base da fonte, ajustável conforme necessário */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  max-width: 100%; /* Garante que o body não ultrapasse a tela */
+}
+
+/* Header */
+.header-inner-content {
+  max-width: 81.25rem; /* Largura máxima */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem; /* Adiciona um pouco de padding lateral */
+}
+
+.section-title {
+  color: #dad7d7;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.9)); /* Degradê preto mais escuro */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Sombra mais escura para combinar com o degradê */
+  z-index: 99;
+}
+
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.logo {
+  color: #ff0000;
+  font-size: 2rem; /* Tamanho ajustável conforme o design */
+}
+
+.logo-image {
+  width: 280px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-container img {
+  width: 1.875rem; /* Largura 30px dividido por 16 = 1.875rem */
+  cursor: pointer;
+  
+}
+
+.nav-icon-container img:first-child {
+  margin-right: 1rem; /* Espaço entre os ícones */
+}
+
+nav ul li {
+  color: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s, font-weight 0.2s;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+}
+
+.menu-button {
+  display: none;
+}
+.close-button {
+  cursor: pointer;
+  display: none; /* Oculta o botão de fechar por padrão */
+}
+
+header {
+  background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.header-bottom-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.header-bottom-side-left {
+  flex: 1;
+  padding: 1rem;
+}
+
+.header-bottom-side-left h2 {
+  font-size: 2.5rem; /* Ajustado para diferentes tamanhos de tela */
+  margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left button {
+  background-color: #ff0000;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 3.8rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.header-bottom-side-left button:hover {
+  background-color: #770808;
+}
+
+.btnVermais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 88, 32);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btnVermais i {
+  margin-right: 0.3125rem;
+}
+
+.header-bottom-side-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.header-bottom-side-right img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #5e5d5d;
+  margin-left: 1px;
+}
+
+/* Media Queries */
+
+/* Para telas pequenas e médias */
+@media (max-width: 800px) {
+  .logo {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte */
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .header-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem; /* Ajusta o padding para telas menores */
+  }
+
+  nav {
+    position: absolute;
+    background-color: #2c2c2c;
+    width: 100%;
+    top: 3rem;
+    display: none;
+  }
+
+  .show-menu nav {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0;
+  }
+
+  .btnVermais {
+    font-size: 0.9rem;
+  }
+
+  .header-bottom-side-left h2 {
+    font-size: 2rem; /* Ajustado para diferentes tamanhos de tela */
+  }
+
+  .header-bottom-side-left p {
+    font-size: 0.9rem; /* Ajustado para diferentes tamanhos de tela */
+  }
+
+  .header-bottom-side-left button {
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
+  body {
+    font-size: 50%; /* Reduz o tamanho da fonte */
+  }
+
+  .header-bottom-side-left h2 {
+    font-size: 1.5rem; /* Ajustado para telas muito pequenas */
+  }
+
+  .header-bottom-side-left p {
+    font-size: 0.8rem; /* Ajustado para telas muito pequenas */
+  }
+
+  .header-bottom-side-left button {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.5rem;
+  }
+
+  .btnVermais {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Main Content */
+main {
+  background-color: #ebebeb;
+}
+.gray-background {
+    background: linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0.85), /* Preto com 85% de opacidade */
+      rgba(0, 0, 0, 0.70), /* Preto com 70% de opacidade */
+      rgba(0, 0, 0, 0.50)  /* Preto com 50% de opacidade */
+    );}
+
+.page-inner-content {
+  max-width: 80rem; /*1280 / 16*/
+  margin: 0 auto;
+}
+
+.cols {
+  display: grid;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.cols-3 img {
+  max-width: 100%;
+  border-radius: 0.625rem;
+  box-shadow: 2px 2px 5px 2px #5e5d5d;
+}
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 0.625rem;
+  box-shadow: 2px 2px 5px 2px #5e5d5d;
+}
+
+.product-item p {
+  margin-top: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #ebebeb;
+  text-decoration: none !important; /* Remove o sublinhado e força a aplicação */
+  transition: color 0.3s; /* Adiciona uma transição suave de cor */
+}
+.product-item a:hover {
+  color: #797777; /* Escurece a cor do link quando o mouse passa por cima */
+}
+
+.cols-4 img {
+  max-width: 100%;
+  border-radius: 0.9375rem;
+  box-shadow: 2px 2px 5px 2px #5e5d5d;
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.cols > * {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cols > *:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.subtitle-underline {
+  width: 100px;
+  height: 5px;
+  background: #ff0000;
+  border-radius: 9999px;
+  margin: 8px auto 0 auto;
+}
+
+.product {
+  color: #dad7d7;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.rate {
+  color: #f7e70a;
+  font-size: 1.3rem;
+}
+
+.product-price span {
+  font-weight: 600;
+}
+
+.exclusive-container {
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 5rem 1rem;
+}
+
+.exclusive-container img {
+  max-width: 100%; 
+}
+
+/* Estilos gerais */
+
+/* Media queries */
+
+/* Estilos para telas pequenas e médias (até 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Ajusta a largura do container para telas menores */
+    padding: 0 10px; /* Adiciona um padding para evitar que o conteúdo toque as bordas */
+  }
+
+  .section-title {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para títulos em telas menores */
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas menores */
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas menores */
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    max-height: auto; /* Permite que o texto ocupe o espaço necessário */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
+  }
+
+  .exclusive-container {
+    flex-direction: column; /* Ajusta a direção do flex para coluna */
+    display: flex;
+  }
+
+  .exclusive-container img {
+    margin-bottom: 2rem; /* Ajusta a margem inferior para melhor espaçamento */
+  }
+}
+
+/* Estilos para dispositivos móveis (até 576px) */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%; /* Ajusta a largura do container para dispositivos móveis */
+    padding: 0 5px; /* Reduz o padding para evitar excesso de espaço nas bordas */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para cabeçalhos em dispositivos móveis */
+  }
+
+  .section-title {
+    font-size: 1rem; /* Reduz o tamanho da fonte para títulos em dispositivos móveis */
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(1, 1fr); /* Ajusta a grade para 1 coluna em dispositivos móveis */
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(1, 1fr); /* Ajusta a grade para 1 coluna em dispositivos móveis */
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+
+  .exclusive-container img {
+    margin-bottom: 1rem; /* Reduz a margem inferior em dispositivos móveis */
+  }
+}
+
+/* Estilos para telas médias (até 800px) */
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para títulos em telas médias */
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas médias */
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta a grade para 2 colunas em telas médias */
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte para melhor legibilidade em telas médias */
+  }
+
+  .exclusive-container {
+    flex-direction: column; /* Mantém a direção do flex em coluna para telas médias */
+    display: flex;
+  }
+
+  .exclusive-container img {
+    margin-bottom: 3rem; /* Ajusta a margem inferior para melhor espaçamento em telas médias */
+  }
+}
+
+
+/* Main content */
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  padding: 4rem 1rem;
+  justify-content: space-evenly;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+  text-align: center;
+  box-shadow: 0 0 15px #afafaf;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  margin: 5px 0;
+  color: #c7c7c7;
+}
+
+.testimonial p:first-child {
+  font-weight: bold;
+  font-size: 5rem;
+  color: #eff306;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.testimonial p:last-child {
+  font-weight: bold;
+  color: #f1eeee;
+}
+
+/* Media queries */
+@media (max-width: 880px) {
+  .testimonials {
+    flex-direction: column;
+  }
+  .testimonial {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Footer */
+.footer-content {
+  display: flex;
+  align-items: center;
+  color: #8f8f8f;
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+footer {
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto no footer */
+  padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.footer-inner-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Largura máxima do conteúdo interno */
+  margin: 0 auto; /* Centralizar o conteúdo */
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  flex-basis: calc(33.33% - 10px); /* Divide o espaço em 3 colunas */
+}
+
+.footer-about,
+.footer-contact {
+  margin-right: 20px; /* Espaçamento entre as colunas */
+}
+
+.footer-about h4,
+.footer-contact h4,
+.footer-social h4 {
+  margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+.footer-social a {
+  color: #fff; /* Cor dos ícones das redes sociais */
+  font-size: 20px; /* Tamanho dos ícones */
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.download-options > p:first-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+.dowload-options > div {
+  display: flex;
+}
+
+.dowload-options > div img {
+  width: 180px;
+}
+
+.logo-footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.links-footer h3 {
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.links-footer ul {
+  list-style: none;
+}
+
+.links-footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-logo-center img {
+  max-width: 250px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+
+/* Media queries */
+@media (max-width: 800px) {
+  .footer-content {
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content > div {
+    padding: 1rem;
+  }
+
+  .dowload-options > div {
+    display: inline;
+  }
+  .dowload-options > div img {
+    width: 120px;
+  }
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+
+  
+/* Parte de css com novas inclusões em teste */
+/* Estilo base */
+/* Parte de css com novas inclusões em teste */
+/*/* Parte de css com novas inclusões em teste */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 100px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://massagemvips.vercel.app/images/products/product-4.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://massagemvips.vercel.app/images/products/product-9.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://massagemvips.vercel.app/images/products/product-6.PNG")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://massagemvips.vercel.app/images/products/product-7.PNG")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+     }
+   }
+  }
