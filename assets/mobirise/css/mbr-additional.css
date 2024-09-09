@@ -1464,9 +1464,52 @@ a {
 .cid-unw9z3ZeM4 .content-head {
   max-width: 800px;
 }
-.cid-unvpwbvmrt {
-  background-image: url("https://r.mobirisesite.com/673678/assets/images/photo-1600334089648-b0d9d3028eb2.jpeg");
-  overflow: hidden;
+.cid-unSJJE9CkW {
+  display: flex;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/images/pai-600x500.webp");
+}
+.cid-unSJJE9CkW .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.6;
+}
+@media (min-width: 768px) {
+  .cid-unSJJE9CkW {
+    align-items: flex-end;
+  }
+  .cid-unSJJE9CkW .row {
+    justify-content: center;
+  }
+  .cid-unSJJE9CkW .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-unSJJE9CkW .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-unSJJE9CkW {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-unSJJE9CkW .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-unSJJE9CkW .content-wrap {
+    width: 100%;
+  }
+}
+.cid-unSJJE9CkW .mbr-section-title,
+.cid-unSJJE9CkW .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-unSJJE9CkW .mbr-text,
+.cid-unSJJE9CkW .mbr-section-btn {
+  text-align: center;
 }
 .cid-unvpwbwaSR {
   padding-top: 6rem;
@@ -1504,6 +1547,53 @@ a {
 .cid-unvpwbwaSR .img-wrapper {
   display: flex;
   justify-content: center;
+}
+.cid-unN42bNVLO {
+  display: flex;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/mulher-fazendo-massagem-nuru-com-as-maos-nas-costas-de-um-homem.jpg.webp");
+}
+.cid-unN42bNVLO .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .cid-unN42bNVLO {
+    align-items: flex-end;
+  }
+  .cid-unN42bNVLO .row {
+    justify-content: center;
+  }
+  .cid-unN42bNVLO .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-unN42bNVLO .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-unN42bNVLO {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-unN42bNVLO .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-unN42bNVLO .content-wrap {
+    width: 100%;
+  }
+}
+.cid-unN42bNVLO .mbr-section-title,
+.cid-unN42bNVLO .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-unN42bNVLO .mbr-text,
+.cid-unN42bNVLO .mbr-section-btn {
+  text-align: center;
 }
 .cid-unvpwbwh57 {
   padding-top: 5rem;
